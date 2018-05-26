@@ -17,6 +17,7 @@ backup_core_only=$(ynh_app_setting_get "$app" backup_core_only)
 
 # definie useful vars
 final_path="/var/www/$app"
+data_path="/home/yunohost.app/$app"
 
 # use prior backup and restore on error only if backup feature exists on installed instance
 if [ -f "/etc/yunohost/apps/$app/scripts/backup" ] ; then
