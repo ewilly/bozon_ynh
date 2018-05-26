@@ -65,5 +65,6 @@ else
 	ynh_app_setting_set "$app" unprotected_uris "/"
 fi
 
-# Purge php sessions stored in /var/lib/php5/sessions
+# Purge php sessions stored in /var/lib/phpx/sessions
 [ -x /usr/lib/php5/sessionclean ] && /usr/lib/php5/sessionclean
+[ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean
